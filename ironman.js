@@ -18,9 +18,9 @@ canvas.height = height;
 //Variables for game
 var platforms = [],
 	image = document.getElementById("sprite"),
-	player, platformCount = 7,
+	player, platformCount = 10,
 	position = 0,
-	gravity = 0.225,
+	gravity = 0.2,
 	animloop,
 	flag = 0,
 	menuloop, broken = 0,
@@ -48,6 +48,9 @@ var Base = function() {
 		} catch (e) {}
 	};
 };
+
+//Check line 53
+//var grav = function (gravity) {if (key == 32) {gravity = 0;} else {gravity = 0.2;}}
 
 var base = new Base();
 
@@ -139,11 +142,11 @@ function Platform() {
 	//3: Breakable (Go through)
 	//4: Vanishable 
 	//Setting the probability of which type of platforms should be shown at what score
-	if (score >= 5000) this.types = [1, 2, 2, 3, 3, 1, 2, 4];
-	else if (score >= 2000 && score < 5000) this.types = [2, 4, 2, 4, 2, 4, 2, 4, 3, 3, 3];
-	else if (score >= 1000 && score < 2000) this.types = [2, 2, 3, 3, 4, 4, 4, 4];
-	else if (score >= 500 && score < 1000) this.types = [1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4];
-	else if (score >= 100 && score < 500) this.types = [1, 2, 2, 3, 3, 4];
+	if (score >= 5000) this.types = [2, 3, 3, 3, 4, 4, 4, 4];
+	else if (score >= 2000 && score < 5000) this.types = [2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4];
+	else if (score >= 1000 && score < 2000) this.types = [2, 2, 2, 3, 3, 3, 3, 3];
+	else if (score >= 500 && score < 1000) this.types = [1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3];
+	else if (score >= 100 && score < 500) this.types = [1, 1, 1, 1, 2, 2];
 	else this.types = [1];
 
 	this.type = this.types[Math.floor(Math.random() * this.types.length)];
