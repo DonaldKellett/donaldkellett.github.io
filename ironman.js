@@ -50,7 +50,7 @@ var Base = function() {
 	};
 };
 
-//var grav = function (gravity) {if (key == 32) {gravity = 0;} else {gravity = 0.2;}}
+var grav = function (gravity) {if (key == 32) {gravity = 0;} else {gravity = 0.2;}}
 
 var base = new Base();
 
