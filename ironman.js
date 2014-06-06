@@ -1,4 +1,3 @@
-//CHEKCK LINE 53 AND LINE 260!
 // RequestAnimFrame: a browser API for getting smooth animations
 window.requestAnimFrame = (function() {
 	return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
@@ -49,8 +48,6 @@ var Base = function() {
 		} catch (e) {}
 	};
 };
-
-var grav = function (gravity) {if (key == 32) {gravity = 0;} else {gravity = 0;}}
 
 var base = new Base();
 
@@ -257,7 +254,13 @@ function init() {
 				player.isMovingRight = true;
 			}
 			
-			if(key == 64) {if(firstRun === true)init();else reset();}};
+			if(key == 32) {
+				if(firstRun === true)
+					init();
+				else 
+					reset();
+			}
+		};
 
 		document.onkeyup = function(e) {
 			var key = e.keyCode;
