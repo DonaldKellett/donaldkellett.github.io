@@ -257,13 +257,7 @@ function init() {
 				player.isMovingRight = true;
 			}
 			
-			if(key == 32) {
-				if(firstRun === true)
-					init();
-				else 
-					reset();
-			}
-		};
+			//if(key == 32) {if(firstRun === true)init();else reset();}};
 
 		document.onkeyup = function(e) {
 			var key = e.keyCode;
