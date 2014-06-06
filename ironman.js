@@ -1,3 +1,4 @@
+//CHEKCK LINE 53 AND LINE 260!
 // RequestAnimFrame: a browser API for getting smooth animations
 window.requestAnimFrame = (function() {
 	return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
@@ -49,7 +50,6 @@ var Base = function() {
 	};
 };
 
-//Check line 53
 //var grav = function (gravity) {if (key == 32) {gravity = 0;} else {gravity = 0.2;}}
 
 var base = new Base();
