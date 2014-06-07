@@ -419,7 +419,7 @@ function init() {
 
 		//Springs
 		var s = Spring;
-		if (player.vy > 0 || (s.state === 0) && 
+		if (player.vy > 0 && (s.state === 0) && 
 			(player.x + 15 < s.x + s.width) && 
 				(player.x + player.width - 15 > s.x) && 
 					(player.y + player.height > s.y) && 
