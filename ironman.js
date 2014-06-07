@@ -1,3 +1,4 @@
+// Check line 422
 // RequestAnimFrame: a browser API for getting smooth animations
 window.requestAnimFrame = (function() {
 	return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
@@ -418,7 +419,7 @@ function init() {
 
 		//Springs
 		var s = Spring;
-		if (player.vy > 0 && (s.state === 0) && 
+		if (player.vy > 0 || (s.state === 0) && 
 			(player.x + 15 < s.x + s.width) && 
 				(player.x + player.width - 15 > s.x) && 
 					(player.y + player.height > s.y) && 
