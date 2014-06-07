@@ -352,7 +352,7 @@ function init() {
 
 	function springCalc() {
 		var s = Spring;
-		var p = platforms[1];
+		var p = platforms[0];
 
 		if (p.type == 1 || p.type == 2) {
 			s.x = p.x + p.width / 2 - s.width / 2;
