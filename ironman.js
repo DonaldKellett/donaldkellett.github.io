@@ -1,4 +1,3 @@
-// Check line 424
 // RequestAnimFrame: a browser API for getting smooth animations
 window.requestAnimFrame = (function() {
 	return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
@@ -253,7 +252,7 @@ function init() {
 			} else if (key == 39) {
 				dir = "right";
 				player.isMovingRight = true;
-			} else if (key == 38) {player.vy += -2;}
+			}
 			
 			if(key == 32) {
 				if(firstRun === true)
@@ -297,7 +296,6 @@ function init() {
 			player.vx = 8;
 		else if(player.vx < -8)
 			player.vx = -8;
-			 if (player.vy < -32) {player.vy = -32;}
 
 		//console.log(player.vx);
 		
