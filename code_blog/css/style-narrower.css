@@ -31,7 +31,10 @@
 	
 		.item
 		{
-			margin-bottom: 15px;
+			margin: 15px 0px 0px 0px;
+			/* Test Float */
+			float:left;
+			/* End of Test Float */
 		}
 
 /*********************************************************************************/
