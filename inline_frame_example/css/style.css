@@ -17,6 +17,8 @@
 		background: #fff;
 	}
 
+	iframe {width:900px; height:900px;}
+
 		body.is-loading *
 		{
 			-moz-transition: none !important;
