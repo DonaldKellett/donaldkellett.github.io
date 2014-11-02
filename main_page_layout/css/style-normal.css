@@ -10,76 +10,26 @@
 
 	body,input,textarea,select
 	{
-		font-size: 11pt;
+		font-size: 13pt;
+		line-height: 1.65em;
 	}
 
-	/* Sections/Article */
+	/* Feature Icon */
 
-		section,
-		article,
-		.row > section,
-		.row > article
+		.feature-icon
 		{
-			margin: 0 0 1.5em 0 !important;
+			margin-bottom: 2em;
 		}
 
-	/* Button */
-
-		.button
-		{
-			padding-left: 0;
-			padding-right: 0;
-			width: 100%;
-			max-width: 300px;
-		}
-
-	/* List */
-
-		ul.icons
-		{
-		}	
-		
-			ul.icons li
-			{
-				padding-left: 0.35em;
-			}
-
-		ul.actions
-		{
-		}
-
-			ul.actions li
-			{
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
-		ul.menu
-		{
-		}
-
-			ul.menu li
-			{
-				border: 0;
-				padding: 0;
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
 	#header
 	{
-		padding: 6em 20px 6em 20px;
+		padding: 12em 0 12em 0;
 	}
-	
-		#header > header
-		{
-			padding: 0 1em 0 1em;
-		}
-	
+
 /*********************************************************************************/
 /* Main Sections                                                                 */
 /*********************************************************************************/
@@ -90,20 +40,10 @@
 	
 		.main > header
 		{
-			padding: 3em 20px 3em 20px;
+			padding: 4em 0 4em 0;
 		}
-
-			.main > header h2
-			{
-				font-size: 1.5em;
-			}
-
+		
 		.main > .content
 		{
-			padding: 3em 20px 3em 20px;
+			padding: 4em 0 4em 0;
 		}
-
-			.main > .content h3
-			{
-				font-size: 1.25em;
-			}

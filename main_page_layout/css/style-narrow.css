@@ -8,10 +8,15 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body,input,textarea,select
+	header, footer, h2, h3, h4, h5, h6
 	{
-		font-size: 11pt;
+		text-align: center;
 	}
+	
+		header > p
+		{
+			text-align: center;
+		}
 
 	/* Sections/Article */
 
@@ -20,64 +25,48 @@
 		.row > section,
 		.row > article
 		{
-			margin: 0 0 1.5em 0 !important;
+			margin: 0 0 2.5em 0 !important;
 		}
-
-	/* Button */
-
-		.button
+	
+	/* Table */
+	
+		.table-wrapper
 		{
-			padding-left: 0;
-			padding-right: 0;
 			width: 100%;
-			max-width: 300px;
+			overflow-x: scroll;
+			padding-left: 1px;
+			-webkit-overflow-scrolling: touch;
 		}
 
 	/* List */
 
-		ul.icons
-		{
-		}	
-		
-			ul.icons li
-			{
-				padding-left: 0.35em;
-			}
-
 		ul.actions
 		{
+			text-align: center;
 		}
 
-			ul.actions li
-			{
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
-		ul.menu
-		{
-		}
-
-			ul.menu li
-			{
-				border: 0;
-				padding: 0;
-				display: block;
-				margin: 1em 0 1em 0;
-			}
-	
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
 	#header
 	{
-		padding: 6em 20px 6em 20px;
+		margin: 0 !important;
+		padding: 8em 2em 8em 2em;
 	}
 	
-		#header > header
+		#header header
 		{
-			padding: 0 1em 0 1em;
+		}
+		
+			#header header p
+			{
+				margin-top: 1em;
+			}
+
+		#header footer
+		{
+			padding-top: 1.25em;
 		}
 	
 /*********************************************************************************/
@@ -86,24 +75,50 @@
 
 	.main
 	{
+		margin: 0 !important;
 	}
 	
 		.main > header
 		{
-			padding: 3em 20px 3em 20px;
+			padding: 3.5em 2em 3.5em 2em;
 		}
 
 			.main > header h2
 			{
-				font-size: 1.5em;
+				font-size: 1.85em;
+			}
+
+			.main > header br
+			{
+				display: none;
+			}
+
+			.main > header p
+			{
+				margin: 1.5em 0 0 0;
 			}
 
 		.main > .content
 		{
-			padding: 3em 20px 3em 20px;
+			padding: 3.5em 20px 3.5em 20px;
 		}
-
-			.main > .content h3
+		
+			.main > .content > .container > :last-child
 			{
-				font-size: 1.25em;
+				margin-bottom: 0 !important;
 			}
+		
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		margin: 0 !important;
+		padding: 3em 0 3em 0;
+	}
+	
+		#footer .copyright
+		{
+			margin-top: 2em;
+		}
