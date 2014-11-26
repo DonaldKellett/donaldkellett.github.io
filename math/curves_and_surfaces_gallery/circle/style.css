@@ -1,2 +1,4 @@
 #title {font-size: 50px; font-family: 'Gloria Hallelujah', Verdana, Garamond, Arial, sans-serif, serif, cursive;}
 #firstpic {border-radius: 10px; border: 1px solid blue;}
+a {height: 100px; width: 250px; background-color: red; text-decoration: none; font-weight: bold; color: black; border-radius: 5px;}
+a:hover {height: 100px; width: 250px; background-color: red; text-decoration: none; font-weight: bold; color: white; border-radius: 5px;}
