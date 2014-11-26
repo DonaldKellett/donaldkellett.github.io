@@ -1,3 +1,5 @@
 h1 {font-family: 'Gloria Hallelujah', Verdana, Garamond, Arial, serif, sans-serif, cursive; font-size: 50px; color: black;}
 #unit_circle {border-radius: 10px; border: 2px solid blue;}
 #unit_circle_2 {border-radius: 10px; border: 2px solid blue;}
+a {height: 100px; width: 250px; background-color: red; text-decoration: none; font-weight: bold; color: black; border-radius: 5px;}
+a:hover {height: 100px; width: 250px; background-color: red; text-decoration: none; font-weight: bold; color: white; border-radius: 5px;}
