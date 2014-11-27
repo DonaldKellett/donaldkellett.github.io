@@ -1,0 +1,6 @@
+h1 {font-size: 50px; font-weight: bold; font-family: 'Gloria Hallelujah', Verdana, Garamond, Arial, serif, sans-serif, cursive;}
+#tractrix {border-radius: 5px; border: 3px solid blue;}
+#propertyoftractrix {border-radius: 5px; border: 3px solid blue;}
+#vectorontractrix {border-radius: 5px; border: 3px solid blue;}
+a {height: 100px; width: 250px; background-color: red; text-decoration: none; font-weight: bold; color: black; border-radius: 5px;}
+a:hover {height: 100px; width: 250px; background-color: red; text-decoration: none; font-weight: bold; color: white; border-radius: 5px;}
