@@ -908,8 +908,15 @@
 
 #email_button:hover {height: 40px; width: 150px; background-color: black; color: red; border-radius: 5px; text-align: center; text-decoration: none;}
 
-#email_link {color: white; text-decoration: none; text-align: center;}
-#email_link:hover {color: red; text-decoration: none; text-align: center;}
+#emaillink {color: white; text-decoration: none; text-align: center; font-weight: bold;}
+#emaillink:hover {color: red; text-decoration: none; text-align: center; font-weight: bold;}
+
+#mainpage {color: white; text-decoration: none; text-align: center; font-weight: bold;}
+#mainpage:hover {color: red; text-decoration: none; text-align: center; font-weight: bold;}
+
+
+
+
 
 
 
