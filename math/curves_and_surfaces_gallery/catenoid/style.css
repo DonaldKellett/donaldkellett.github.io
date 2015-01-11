@@ -1,5 +1,0 @@
-* {background-color: blue;}
-h1 {font-size: 50px; font-family: 'Gloria Hallelujah', Verdana, Garamond, Arial, serif, sans-serif, cursive; display: inline;}
-a {display: inline-block; background-color: red; border-radius: 5px; text-decoration: none; color: black; font-weight: bold; margin-left: 1150px; position: fixed;}
-a:hover {display: inline-block; background-color: red; border-radius: 5px; text-decoration: none; color: white; font-weight: bold; margin-left: 1150px; position: fixed;}
-.catenoid {border-radius: 10px; border: 5px solid red;}
