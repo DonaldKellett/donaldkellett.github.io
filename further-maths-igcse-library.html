@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!-- skel-baseline v2.0.1 | (c) n33 | getskel.com | MIT licensed -->
+<html>
+	<head>
+		<title>Donald Leung - Math</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<link rel="stylesheet" href="http://donaldkellett.github.io/donald.css" />
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="http://donaldkellett.github.io">Donald Leung</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="math.html">Math</a></li>
+						<li><a href="notifications.html">Notifications</a></li>
+						<li><a href="qualifications.html">Qualifications</a></li>
+						<li><a href="code.html">Code</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<div id="access-denied" style="display: none;">
+					<h2>Access Denied</h2>
+					<p>Sorry, you have no right to access the Library.  If you have entered the secret code incorrectly, please refresh the page to re-enter the secret code.</p>
+				</div>
+
+				<div id="further-maths-igcse-library" style="display: none;">
+					<h2>Further Maths IGCSE Library</h2>
+					<h2 id="emma-baghurst" style="display: none;">Welcome <strong style="font-weight: bold;">Emma</strong>!</h2>
+					<h2 id="andre-hui" style="display: none;">Welcome Andre!</h2>
+					<div id="visitor" style="display: none;">
+						<h2>Welcome!</h2>
+						<p>I don't know how you got the secret code, but seeing as you have typed in the correct code, I assume you are a family member/close friend of someone who has the code.</p>
+					</div>
+					<h3>Feel free to use the resources below to revise!</h3>
+					<div></div>
+				</div>
+
+				<script>
+				var access = prompt("Please enter the secret code to access the Library.");
+				switch (access) {
+					case "Gaussian-Curvature-Unit-Sphere-1":
+					document.getElementById("further-maths-igcse-library").style.display = "block";
+					var askName = prompt("Code correct!  Please enter your first and last name (e.g. if your full name is 'Donald Sebastian Leung', type 'Donald Leung')");
+					if (askName === "Emma Baghurst") {document.getElementById("emma-baghurst").style.display = "block";}
+					else if (askName === "Andre Hui") {document.getElementById("andre-hui").style.display = "block";}
+					else {document.getElementById("visitor").style.display = "block";}
+					break;
+					default:
+					document.getElementById("access-denied").style.display = "block";
+				}
+				</script>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<!-- My Footer -->
+						<div class="12u$">
+							<h2>Email Me</h2>
+							<p>If you have any questions or would simply like to contact me, feel free to send me an email!</p>
+							<p><a class="button special" href="mailto:dleung@connect.kellettschool.com">Send Email</a></p>
+						</div>
+						<div class="12u$">
+							<div id="icon-divider">
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<li><a href="https://www.facebook.com/i.donaldl" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/donald.seb" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+									<li><a href="https://github.com/DonaldKellett" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+									<!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
+								</ul>
+							</div>
+						</div>
+						<div class="12u$">
+							<div id="icon-divider-less-important">
+								<ul class="icons">
+									<li><a href="https://github.com/KellettJAInnovision" class="icon fa-github" target="_blank"><span class="label">Github (KellettJAInnovision)</span></a></li>
+									<li><a href="http://kellettjainnovision.github.io" class="icon fa-briefcase" target="_blank"><span class="label">Innovision</span></a></li>
+									<li><a href="http://kellettjainnovision.github.io/donald" class="icon fa-paper-plane-o" target="_blank"><span class="label">Donald Leung's Landing Page</span></a></li>
+									<li><a href="http://kellettjainnovision.github.io/donald/sidepage" class="icon fa-code" target="_blank"><span class="label">Donald Leung's Side Page</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="6u 12u$(2)">
+							<h2>Aliquam Interdum</h2>
+							<p>Ornare interdum nascetur enim lobortis nunc amet placerat pellentesque nascetur in adipiscing. Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id lorem ipsum dolor.</p>
+						</div>
+						<div class="3u 6u(2) 12u$(3)">
+							<h3>Accumsan</h3>
+							<ul class="alt">
+								<li>Nascetur nunc varius commodo.</li>
+								<li>Vis id faucibus montes tempor</li>
+								<li>massa amet lobortis vel.</li>
+								<li>Nascetur nunc varius commodo.</li>
+							</ul>
+						</div>
+						<div class="3u$ 6u$(2) 12u$(3)">
+							<h3>Faucibus</h3>
+							<ul class="alt">
+								<li>Nascetur nunc varius commodo.</li>
+								<li>Vis id faucibus montes tempor</li>
+								<li>massa amet lobortis vel.</li>
+								<li>Nascetur nunc varius commodo.</li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+				<!-- <div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div> -->
+				<div class="copyright">
+					&copy; 2015 Donald Leung. All rights reserved.
+				</div>
+			</footer>
+
+	</body>
+</html>
