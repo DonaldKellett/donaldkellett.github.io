@@ -2,7 +2,7 @@
 <!-- skel-baseline v2.0.1 | (c) n33 | getskel.com | MIT licensed -->
 <html>
 	<head>
-		<title>Donald Leung - Math</title>
+		<title>Donald Leung - Further Maths IGCSE Library (Private Page)</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -22,7 +22,7 @@
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="http://donaldkellett.github.io">Donald Leung</a></h1>
+				<h1><a href="http://donaldkellett.github.io/further-maths-igcse-library.html">Donald Leung <small style="font-size: 0.6em;">Further Maths IGCSE Library</small></a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -30,7 +30,7 @@
 						<li><a href="notifications.html">Notifications</a></li>
 						<li><a href="qualifications.html">Qualifications</a></li>
 						<li><a href="code.html">Code</a></li>
-						<li><a href="further-maths-igcse-library.html">Further Maths IGCSE Library</a></li>
+						<li><a href="further-maths-igcse-library.html" style="color: #ff9f9f;">Further Maths IGCSE Library</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -46,7 +46,14 @@
 				<div id="further-maths-igcse-library" style="display: none;">
 					<h2>Further Maths IGCSE Library</h2>
 					<h2 id="emma-baghurst" style="display: none;">Welcome <strong style="font-weight: bold;">Emma</strong>!</h2>
+					<div id="adminuser">
+						<h2>Welcome Donald (Admin)!</h2>
+						<p><em>Note: This is a preview of the Further Maths IGCSE Library.  The username "adminuser" should only be used for preview purposes.</em></p>
+					</div>
 					<h2 id="andre-hui" style="display: none;">Welcome Andre!</h2>
+					<h2 id="benjamin-forbes" style="display: none;">Welcome Ben!</h2>
+					<h2 id="lauren-wood" style="display: none;">Welcome Lauren!</h2>
+					<h2 id="jasmine-elliott" style="display: none;">Welcome Jasmine!</h2>
 					<div id="visitor" style="display: none;">
 						<h2>Welcome!</h2>
 						<p>I don't know how you got the secret code, but seeing as you have typed in the correct code, I assume you are a family member/close friend of someone who has the code.</p>
@@ -62,7 +69,11 @@
 					document.getElementById("further-maths-igcse-library").style.display = "block";
 					var askName = prompt("Code correct!  Please enter your first and last name (e.g. if your full name is 'Donald Sebastian Leung', type 'Donald Leung')");
 					if (askName === "Emma Baghurst") {document.getElementById("emma-baghurst").style.display = "block";}
+					else if (askName === "adminuser") {document.getElementById("adminuser").style.display = "block";}
 					else if (askName === "Andre Hui") {document.getElementById("andre-hui").style.display = "block";}
+					else if (askName === "Benjamin Forbes") {document.getElementById("benjamin-forbes").style.display = "block";}
+					else if (askName === "Lauren Wood") {document.getElementById("lauren-wood").style.display = "block";}
+					else if (askName === "Jasmine Elliott") {document.getElementById("jasmine-elliott").style.display = "block";}
 					else {document.getElementById("visitor").style.display = "block";}
 					break;
 					default:
