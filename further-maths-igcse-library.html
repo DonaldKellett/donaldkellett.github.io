@@ -42,7 +42,14 @@
 					<h2>Access Denied</h2>
 					<p>Sorry, you have no right to access the Library.  If you have entered the secret code incorrectly, please refresh the page to re-enter the secret code.</p>
 				</div>
-
+				<div id="info" style="display: none;">
+					<h2>About</h2>
+					<p>The Further Maths IGCSE Library is a math/coding project created by Donald Leung.  It was originally created at around October 2014, but was deleted during the major update that occurred during the 2015 New Year.  After James Baghurst came to him and mentioned about the deleted webpage, he decided to re-create the Library.  It was perfect timing because he just started to think about messing with JavaScript, a coding language that he wasn't good at.</p>
+					<h2>Compatibility</h2>
+					<p>The Further Maths IGCSE Library has been tested on Safari and Google Chrome.  It works perfectly fine on Safari, though not so good on Google Chrome.</p>
+					<h2>Credit</h2>
+					<p>Credit goes to <a href="http://codepen.io/nike121" target="_blank">Nickey Khem</a> for providing me the source code of Iron Man Jump, part of which later became the script used in the Library.</p>
+				</div>
 				<div id="further-maths-igcse-library" style="display: none;">
 					<h2 id="emma-baghurst" style="display: none;">Welcome <strong style="font-weight: bold;">Emma</strong>!</h2>
 					<div id="admin" style="display: none;">
@@ -169,7 +176,7 @@
 				</div>
 
 				<script>
-				var access = prompt("Please enter the secret code to access the Library.");
+				var access = prompt("Please enter the secret code to access the Library.  Alternatively, type 'info' to read the full documentary on the Library.");
 				switch (access) {
 					case "Gaussian-Curvature-Unit-Sphere-1":
 					document.getElementById("further-maths-igcse-library").style.display = "block";
@@ -183,6 +190,9 @@
 					else if (askName === "Joy Lee") {document.getElementById("joy-lee").style.display = "block";}
 					else if (askName === "Naomi Carey") {document.getElementById("naomi-carey").style.display = "block";}
 					else {document.getElementById("visitor").style.display = "block";}
+					break;
+					case "info":
+					document.getElementById("info").style.display = "block";
 					break;
 					default:
 					document.getElementById("access-denied").style.display = "block";
