@@ -1,2 +1,4 @@
 #icon-divider {text-align: center;}
 #icon-divider-less-important {text-align: center; font-size: 0.6em;}
+#counter img {width: 7%; height: 7%;}
+#counter em {display: none;}
