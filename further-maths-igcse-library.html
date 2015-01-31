@@ -42,6 +42,46 @@
 					<h2>Access Denied</h2>
 					<p>Sorry, you have no right to access the Library.  If you have entered the secret code incorrectly, please refresh the page to re-enter the secret code.</p>
 				</div>
+
+
+				<div id="tracker" style="display: none;">
+
+					<div id="counter">
+
+						<h2>Welcome to the tracker, <strong>Donald Leung</strong>!</h2>
+
+						<p>This tool is used to keep track of how many of your classmates have actually used the Library to revise.</p>
+
+						<p><strong>Total number of students who have revised using the Further Maths IGCSE Library:
+
+					<!-- DO NOT EDIT THE CODE BELOW -->
+
+					<!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com/" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=5969189&style=0010&nbdigits=9&type=ip&initCount=0" title="Tracking hits" Alt="Tracking hits"   border="0" >
+</a><br/>
+<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Web Counter" 
+target="_blank" style="font-family: Arial, Helvetica, sans-serif; 
+font-size: 10px; color: #6E6A68; text-decoration: none ;"><em>Web Counter</em>
+</a>   
+  
+
+					<!-- End of DO NOT EDIT THE CODE BELOW -->
+
+						</strong></p>
+
+					</div>
+
+				</div>
+
+				<div id="tracker-no-access" style="display: none;">
+
+					<h2>Access Denied</h2>
+					<p>You have <strong>no right</strong> to access the tracker of the Library.  Only the creator of the Library has the right to access the tracker.</p>
+
+				</div>
+
+
 				<div id="info" style="display: none;">
 					<h2>About</h2>
 					<p>The Further Maths IGCSE Library is a math/coding project created by Donald Leung.  It was originally created at around October 2014, but was deleted during the major update that occurred during the 2015 New Year.  After James Baghurst came to him and mentioned about the deleted webpage, he decided to re-create the Library.  It was perfect timing because he just started to think about messing with JavaScript, a coding language that he wasn't good at.</p>
@@ -70,22 +110,22 @@
 					<div class="container">
 						<div class="row">
 							<div class="4u 12u$(2)">
-								<a href="http://spikedmath.com/124.html" target="_blank"><img src="library-weekly-comic.jpg" style="width: 100%; height: 100%;" /></a>
+								<a href="http://spikedmath.com/508.html" target="_blank"><img src="library-weekly-comic.jpg" style="width: 100%; height: 100%;" /></a>
 							</div>
 							<div class="8u$ 12u$(2)">
 								<h3>Comic of the Week</h3>
 								<p>Click to view the comic!</p>
-								<p><em>Related Topic: Logarithmic Functions and Indices</em></p>
-								<p><em>Last Updated: 25/01/15</em></p>
+								<p><em>Related Topic: Calculus (Integration)</em></p>
+								<p><em>Last Updated: 31/01/15</em></p>
 							</div>
 							<div class="4u 12u$(2)">
-								<a href="https://www.desmos.com/calculator/j946f64gkd" target="_blank"><img src="library-POW.jpg" style="width: 100%; height: 100%;" /></a>
+								<a href="https://www.desmos.com/calculator/x7ktaogqke" target="_blank"><img src="library-POW.jpg" style="width: 100%; height: 100%;" /></a>
 							</div>
 							<div class="8u$ 12u$(2)">
 								<h3>Problem of the Week</h3>
 								<p>Try answering the question correctly!  The question is based on the Further Maths IGCSE specification, but tends to require more thinking.  This is updated every Sunday.</p>
-								<p><em>Main Topic: The Quadratic Function</em></p>
-								<p><em>Last Updated: 25/01/15</em></p>
+								<p><em>Main Topic: Identities and Inequalities (Factor and Remainder Theorems)</em></p>
+								<p><em>Last Updated: 31/01/15</em></p>
 							</div>
 							<div class="4u 12u$(2)">
 								<a href="https://www.desmos.com/calculator/kiday6qghh" target="_blank"><img src="library-ch1.jpg" style="width: 100%; height: 100%;" /></a>
@@ -195,6 +235,16 @@
 					break;
 					case "info":
 					document.getElementById("info").style.display = "block";
+					break;
+					case "tracker":
+					var verify = prompt("Please verify your identity.");
+					switch (verify) {
+						case "admin":
+						document.getElementById("tracker").style.display = "block";
+						break;
+						default:
+						document.getElementById("tracker-no-access").style.display = "block";
+					}
 					break;
 					default:
 					document.getElementById("access-denied").style.display = "block";
