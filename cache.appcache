@@ -1,6 +1,16 @@
 CACHE MANIFEST
 # v1
 # This is a test
+
+#HTML Files (just in case)
+index.html
+math.html
+notifications.html
+qualifications.html
+code.html
+further-maths-igcse-library.html
+
+#Other files
 css/font-awesome.min.css
 css/skel.css
 css/style-large.css
