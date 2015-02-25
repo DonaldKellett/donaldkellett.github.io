@@ -1,6 +1,5 @@
 CACHE MANIFEST
-# v1
-# This is a test
+# v2
 
 #HTML Files (just in case)
 index.html
@@ -31,14 +30,18 @@ js/init.js
 js/jquery.min.js
 js/skel-layers.min.js
 js/skel.min.js
-sass/_mixins.scss
-sass/_vars.scss
-sass/style-large.scss
-sass/style-medium.scss
-sass/style-small.scss
-sass/style-xlarge.scss
-sass/style-xsmall.scss
-sass/style.scss
+
+# Sass is not needed anyway, so see if commenting it out will work
+
+# sass/_mixins.scss
+# sass/_vars.scss
+# sass/style-large.scss
+# sass/style-medium.scss
+# sass/style-small.scss
+# sass/style-xlarge.scss
+# sass/style-xsmall.scss
+# sass/style.scss
+
 2x2-matrix.png
 alex-ludwick.png
 baseline.png
