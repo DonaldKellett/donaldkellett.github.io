@@ -8,20 +8,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 
-		<!-- Use exact URLs to ensure that 404 file links to all stylesheets and scripts properly -->
-		<script src="http://donaldkellett.github.io/js/jquery.min.js"></script>
-		<script src="http://donaldkellett.github.io/js/skel.min.js"></script>
-		<script src="http://donaldkellett.github.io/js/skel-layers.min.js"></script>
-		<script src="http://donaldkellett.github.io/js/init.js"></script>
-		<link rel="stylesheet" href="http://donaldkellett.github.io/donald.css"/>
-		<link rel='shortcut icon' href='http://donaldkellett.github.io/favicon.ico' type='image/x-icon'/>
-		<noscript>
-			<link rel="stylesheet" href="http://donaldkellett.github.io/css/skel.css" />
-			<link rel="stylesheet" href="http://donaldkellett.github.io/css/style.css" />
-			<link rel="stylesheet" href="http://donaldkellett.github.io/css/style-xlarge.css" />
-		</noscript>
-
-		<!-- Extra links to stylesheets to ensure styling works properly -->
+		<!-- Links to all stylesheets to ensure styling works properly (Javascript files were excluded because they proved to not work properly in this special case - 404) -->
 		<link rel="stylesheet" href="http://donaldkellett.github.io/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="http://donaldkellett.github.io/css/skel.css" />
 		<link rel="stylesheet" href="http://donaldkellett.github.io/css/style-large.css" />
@@ -31,63 +18,33 @@
 		<link rel="stylesheet" href="http://donaldkellett.github.io/css/style-xsmall.css" />
 		<link rel="stylesheet" href="http://donaldkellett.github.io/css/style.css" />
 
+		<style type="text/css">
+		/* A special internal stylesheet designed specifically for this page only ;) */
+		#fileNotFound {text-align: center;}
+		</style>
+
 	</head>
 	<body id="top">
 
-		<!-- Header -->
-			<header id="header" class="skel-layers-fixed">
-				<h1><a href="/">Donald Leung</a></h1>
-				<nav id="nav">
-					<ul>
-						<!-- Use "/" before file names to ensure navigation panel works -->
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="/math.html">Math</a></li>
-						<li><a href="/notifications.html">Notifications</a></li>
-						<li><a href="/qualifications.html">Qualifications</a></li>
-						<li><a href="/code.html">Code</a></li>
-						<li><a href="/further-maths-igcse-library.html" style="color: #ff9f9f;">Further Maths IGCSE Library</a></li>
-					</ul>
-				</nav>
-			</header>
+		<!-- No header - it won't display anyway -->
 
 		<!-- Main -->
 			<div id="main" class="container">
 
 				<div class="row">
 					<div class="12u$">
-						<h2>404 - File not found</h2>
-						<p>Sorry, the file you requested does not seem to exist on this website.  Please make sure that you have typed in the URL correctly.</p>
-						<p>For now, please use the navigation panel to navigate to an exisitng page, or click on the button below to start over.</p>
-						<p><a href="/" class="button special">Start Over</a></p>
+						<div id="fileNotFound">
+							<h2>404 - File not found</h2>
+							<p>Sorry, the file you requested does not seem to exist on this website.  Please make sure that you have typed in the URL correctly.</p>
+							<p>For now, please click on the button below to start over.</p>
+							<p><a href="/" class="button special">Start Over</a></p>
+						</div>
 					</div>
 				</div>
 
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<div class="row double">
-						<div class="12u$">
-							<h2>Email Me</h2>
-							<p>If you have any questions or would simply like to contact me, feel free to send me an email!</p>
-							<p><a class="button special" href="mailto:dleung@connect.kellettschool.com">Send Email</a></p>
-						</div>
-						<div class="12u$">
-							<div id="icon-divider">
-								<ul class="icons">
-									<li><a href="https://www.facebook.com/i.donaldl" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.facebook.com/donald.seb" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://github.com/DonaldKellett" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="copyright">
-					&copy; 2015 Donald Leung. All rights reserved.
-				</div>
-			</footer>
+		<!-- No footer needed -->
 
 	</body>
 </html>
