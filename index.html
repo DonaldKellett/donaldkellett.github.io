@@ -77,6 +77,8 @@ var seconds = 0,
 function timer () {
 	worker.onmessage = function (event) {
 		seconds = event.data;
+		minutes = 0;
+		hours = 0;
 		if (seconds < 60) {
 			document.getElementById("timer").innerHTML = "Time Visited: " + seconds + " seconds";
 		} else if (seconds >= 60 && seconds < 3600) {
