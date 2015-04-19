@@ -13,6 +13,7 @@ function timedRedirect() {
 		} else {
 			document.getElementById("timed-redirect").innerHTML = "You will now be redirected to <strong>Donald Leung - Home</strong>.";
 			window.location = "http://donaldkellett.github.io";
+			worker.terminate();
 		}
 	}
 }
