@@ -11,7 +11,7 @@ function timedRedirect() {
 		document.getElementById("redirect").innerHTML = "If you do nothing, you will be redirected to <strong>Donald Leung - Home</strong> in " + seconds + " seconds.";
 	} else {
 		document.getElementById("redirect").innerHTML = "You will now be redirected to <strong>Donald Leung - Home</strong>."
-		// window.location = "http://donaldkellett.github.io";
+		window.location = "http://donaldkellett.github.io";
 	}
 	seconds--;
 	setTimeout("timedRedirect()", 1000);
