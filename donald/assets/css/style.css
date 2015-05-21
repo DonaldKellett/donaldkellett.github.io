@@ -1,0 +1,37 @@
+/*
+	style.css
+	Donald Leung's Main Stylesheet
+	(c) Donald Leung.  All rights reserved.
+*/
+
+/* Featured Projects */
+
+.projects, .coders {
+	text-align: center;
+}
+
+/* Code Display */
+
+.declaration, .attribute {
+	color: #606;
+}
+
+.tag, .function {
+	color: #008;
+}
+
+.equal, .obj-dot, .pun {
+	color: #660;
+}
+
+.value, .string {
+	color: #080;
+}
+
+.comment {
+	color: #800;
+}
+
+.number {
+	color: #066;
+}
