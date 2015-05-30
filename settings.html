@@ -2,7 +2,7 @@
 <!-- skel-baseline v3.0.0-dev | (c) n33 | skel.io | MIT licensed -->
 <html>
 	<head>
-		<title>Donald Leung - Qualifications</title>
+		<title>Donald Leung - Settings</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -33,31 +33,57 @@
 		<!-- Main -->
 			<div id="main" class="container">
 
-				<h2>Qualifications</h2>
+				<h2><span class="icon fa fa-gear fa-spin"></span> Settings</h2>
+				<p>If you do not like the default settings of certain features on this website, you can alter the settings here.  Your settings will be saved locally on your own computer.</p>
+				<p>As this website develops more features, there will be more options on this page.</p>
 
-				<h3>I/GCSE Qualifications</h3>
+				<h3>Search Engine</h3>
+				<p>Not liking the default search engine used on this website (Google)?  Feel free to choose another search engine below.</p>
+				<form>
+					<div class="container">
+						<div class="row uniform">
+							<div class="9u 12u(medium)">
+								<select id="search-engine">
+									<option value="">- Search Engine -</option>
+									<option value="Google">Google</option>
+									<option value="DuckDuckGo">DuckDuckGo</option>
+								</select>
+							</div>
+							<div class="3u 12u(medium)">
+								<a href="javascript:void(0)" class="button special fit icon fa-server" onclick="setSearchEngine()">Save</a>
+							</div>
+						</div>
+					</div>
+				</form>
 
-                <ul>
-                    <li>IGCSE Mathematics A: A* (May 2014)</li>
-                    <li>GCSE Chinese Higher: A* (May 2014)</li>
-                </ul>
+				<h3>Notifications</h3>
+				<p>Change the settings here to filter notifications!</p>
+				<form>
+					<div class="container">
+						<div class="row uniform">
+							<div class="9u 12u(medium)">
+								<select id="notification-type">
+									<option value="">- Filter Notifications -</option>
+									<option value="all">Show All Notifications</option>
+									<option value="personal">Show Personal Notifications Only</option>
+									<option value="website">Show Website Notifications Only</option>
+									<option value="none">Hide All Notifications</option>
+								</select>
+							</div>
+							<div class="3u 12u(medium)">
+								<p>
+									<a href="javascript:void(0)" class="button alt fit icon fa-server" onclick="setNotificationTypes()">Save</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
 
-                <h3>A-Level/IAL Qualifications</h3>
-
-                <ul>
-                    <li>IAL Mathematics: <em>Unknown</em>
-                      	<ul>
-                          	<li>C12: A (January 2015)</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h3>Other Qualifications</h3>
-
-                <ul>
-                    <li>Kumon Mathematics Core Programme: 95% - Pass (December 2012)</li>
-                    <li>EPYMT (Towards Differential Geometry) - Credit/Distinction (August 2014)</li>
-                </ul>
+				<h3>Restore Defaults</h3>
+				<p>Want to use default settings anyway?  No problem!  Click on the button below to restore website defaults!</p>
+				<p>
+					<a href="javascript:void(0)" class="button icon fa-trash" onclick="restoreDefaults()">Restore Defaults</a>
+				</p>
 
 			</div>
 
@@ -133,6 +159,8 @@
 			<!-- My Scripts -->
 				<script src="donald/assets/js/email.js"></script>
 				<script src="donald/assets/js/search.js"></script>
+				<script src="donald/assets/js/settings.js"></script>
+				<script src="donald/assets/js/settings.init.js"></script>
 
 		<!--Start of Tawk.to Script-->
 			<script type="text/javascript">

@@ -1,15 +1,17 @@
 /*
   search.js
-  A simple Javascript file that makes use of Google Search to perform site-specific searches
-  N.B. I did not use Google Custom Search Engine because it does not display properly when used in conjunction with Skel
+  Powers the search feature of donaldkellett.github.io
+  Uses the following search engines: Google/DuckDuckGo
+  (c) Donald Leung.  All rights reserved.
 */
 
-function googleSearch() {
-  window.location = "https://google.com.hk/search?q=" + document.getElementById("search").value + " site:donaldkellett.github.io";
-}
-
-document.onkeydown = function() {
-  if (event.keyCode == 13) {
-    googleSearch();
+function conductSearch() {
+  var question = document.getElementById("search-keywords").value;
+  if (localStorage.getItem("search-engine") === "Google") {
+    window.location = "https://google.com.hk/search?q=" + question + " site:donaldkellett.github.io";
+  } else if (localStorage.getItem("search-engine") === "DuckDuckGo") {
+    window.location = "http://duckduckgo.com/?q=" + question + " site:donaldkellett.github.io";
+  } else {
+    window.location = "https://google.com.hk/search?q=" + question + " site:donaldkellett.github.io";
   }
 }

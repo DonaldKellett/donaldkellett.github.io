@@ -35,3 +35,26 @@
 .number {
 	color: #066;
 }
+
+/* Email Form */
+#email-body {
+	resize: none;
+	height: 200px;
+}
+
+/* Footer Icons */
+
+#icon-divider {
+	text-align: center;
+}
+
+/* Notifications Section */
+
+#no-notifications {
+	font-style: italic;
+	display: none;
+}
+
+.personal-notifications, .website-notifications {
+	display: block;
+}
