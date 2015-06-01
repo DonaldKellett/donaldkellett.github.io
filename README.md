@@ -7,21 +7,26 @@ The main pages in my website are as follows:
 
  - Home
  - Math
- - Notifications
  - Qualifications
  - Code
 
-All pages are openly available to any visitor who visits my website.  Please note that as of 21/05/15, *Further Maths IGCSE Library* has been deleted.
+... plus a Settings page.
 
-## Widgets
-This website contains a number of interesting features/widgets:
+Further Maths IGCSE Library was deleted in the most recent website redesign that occurred in late May, while the Notifications Page was combined with the "Recent Events" section in the homepage.
+
+## Interesting Features
+This website contains a number of interesting features:
 
  - Tawk.to chat widget
  - Redirect Timer on [404 Page](http://donaldkellett.github.io/404.html)
+ - Email Form
+ - Search Form
 
 The chat widget (powered by [Tawk](http://tawk.to)) means that when I am online, you can chat with me freely.  As for the timer, I coded it myself and it shows how long you have been on my website.  Don't worry - no data is sent back to the server or any third party.
 
-## Baseline [Skel] Version
+I have also recently added an email form that can be filled in before the email is sent, and a search form that makes use of Google Search (default) or DuckDuckGo (optional) to perform in-site searches.
+
+## Baseline ([Skel](http://skel.io)) Version
 This website currently uses the newest version of Baseline - v3.0.0-dev by [n33](http://n33.co).  It was recently redesigned (21/05/15).
 
 ## Languages
