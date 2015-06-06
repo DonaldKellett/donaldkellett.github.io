@@ -7,20 +7,34 @@
 function notificationsInit() {
   var notifications = localStorage.getItem("notification-type");
   if (notifications === "personal") {
-    document.getElementById("no-notifications").style.display = "none";
-    for (i = 0; i < document.getElementsByClassName("personal-notifications").length; i++) {
-      document.getElementsByClassName("personal-notifications")[i].style.display = "block";
-    }
-    for (i = 0; i < document.getElementsByClassName("website-notifications").length; i++) {
-      document.getElementsByClassName("website-notifications")[i].style.display = "none";
+    if (document.getElementsByClassName("personal-notifications").length > 0) {
+      document.getElementById("no-notifications").style.display = "none";
+      for (i = 0; i < document.getElementsByClassName("personal-notifications").length; i++) {
+        document.getElementsByClassName("personal-notifications")[i].style.display = "block";
+      }
+      for (i = 0; i < document.getElementsByClassName("website-notifications").length; i++) {
+        document.getElementsByClassName("website-notifications")[i].style.display = "none";
+      }
+    } else {
+      document.getElementById("no-notifications").style.display = "block";
+      for (i = 0; i < document.getElementsByClassName("website-notifications").length; i++) {
+        document.getElementsByClassName("website-notifications")[i].style.display = "none";
+      }
     }
   } else if (notifications === "website") {
-    document.getElementById("no-notifications").style.display = "none";
-    for (i = 0; i < document.getElementsByClassName("website-notifications").length; i++) {
-      document.getElementsByClassName("website-notifications")[i].style.display = "block";
-    }
-    for (i = 0; i < document.getElementsByClassName("personal-notifications").length; i++) {
-      document.getElementsByClassName("personal-notifications")[i].style.display = "none";
+    if (document.getElementsByClassName("website-notifications").length > 0) {
+      document.getElementById("no-notifications").style.display = "none";
+      for (i = 0; i < document.getElementsByClassName("website-notifications").length; i++) {
+        document.getElementsByClassName("website-notifications")[i].style.display = "block";
+      }
+      for (i = 0; i < document.getElementsByClassName("personal-notifications").length; i++) {
+        document.getElementsByClassName("personal-notifications")[i].style.display = "none";
+      }
+    } else {
+      document.getElementById("no-notifications").style.display = "block";
+      for (i = 0; i < document.getElementsByClassName("personal-notifications").length; i++) {
+        document.getElementsByClassName("personal-notifications")[i].style.display = "none";
+      }
     }
   } else if (notifications === "none") {
     document.getElementById("no-notifications").style.display = "block";
